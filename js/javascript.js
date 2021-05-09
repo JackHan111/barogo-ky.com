@@ -19,6 +19,16 @@ $(function(){
 				}else{
 					$('.section_wrap>.coment').hide()
 				}
+
+				if(destination==4){
+					let bWidth = window.outerWidth;
+					const ptnImg = $('.fp-tableCell>.cont>.partner>.frame>img');
+					if(bWidth<480){
+						ptnImg.stop().delay(2000).animate({
+							left : -80+'%'
+						},5000)
+					}
+				}
 			},
 		afterSlideLoad: function(section, origin, destination, direction){
 			if(destination==1){
@@ -36,4 +46,5 @@ $(function(){
 		evt.preventDefault();
 		$('.fp-tableCell>.location').fadeIn(300);
 	})
+	
 });
