@@ -376,6 +376,13 @@ border-color: transparent #07f transparent transparent;
     color: #909090;
 }
 @media (max-width:479px){
+    .fp-controlArrow.fp-prev{
+        border-width: 22.5px 25.5px 22.5px 0;
+        }
+    .fp-controlArrow.fp-next{
+        border-width: 22.5px 0 22.5px 25.5px;
+        
+    }
     #wrap{
         width: 100%;
     }
@@ -389,13 +396,41 @@ border-color: transparent #07f transparent transparent;
         width: 60%;
         height: 20%;
     }
-    
+    .coment{
+        display: none;
+        position: absolute;
+        width: 80%;
+        left: 5%;
+        height: 30%;
+        top: 40%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .coment>p{
+        overflow: hidden;
+        width: 100%;
+        height: 50%;
+        color: #222;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+    }
+    .name{
+        color: #0077ff;
+        font-size: 24px;
+    }
     .fp-tableCell{
         position: relative;
         width: 100%;
         height: 100%;
     }
-    
+   
+    .name{
+        color: #0077ff;
+        font-size: 20px;
+    }
     .fp-tableCell>.cont_food{
         position: absolute;
         left: 0;
@@ -429,21 +464,23 @@ border-color: transparent #07f transparent transparent;
     .fp-tableCell>.cont_map>.video_container{
         position: absolute;
         left: -70%;
-        bottom: 100%;
+        top: -20%;
     }
     .fp-tableCell>.cont_map>.map_coment{
         position: absolute;
-        top: 5%;
+        top: 2%;
         left: 5%;
         width: 90%;
-        height: 20%;
+        height: 15%;
     }
     .fp-tableCell>.cont_map>.map_coment>h3{
         font-size: 20px;
+        line-height: 20px;
     }
     .fp-tableCell>.cont_map>.map_coment>p{
         font-size: 13px;
-        margin-top: 0;
+        margin-top: -10%;
+        line-height: 15px;
     }
     .fp-tableCell>.location>.bg{
         position: absolute;
@@ -495,24 +532,30 @@ border-color: transparent #07f transparent transparent;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 20px;
     }
+    .fp-tableCell>.shop>.shopcont>a.rider>p{
+        line-height: 20px;
+    }
     .fp-tableCell>.shop>.shopcont>a>p{
-        left: 25%;
-        width: 50%;
+        left: 26%;
+        width: 48%;
         bottom: 10%;
         font-size: 13px;
+        line-height: 30px;
         height: 35%;
-        margin-left: 0;
+        margin: 0 auto;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 20px;
     }
     .fp-tableCell>.cont>.partner{
-        top: 25%;
+        top: 15%;
         background-size: cover;
         height: 45%;
     }
     .fp-tableCell>.cont>h3{
-        top: 10%;
-        font-size: 24px;
+        width: 60%;
+        top: 5%;
+        left: 20%;
+        font-size: 15px;
     }
     .fp-tableCell>.cont>.partner>.frame{
         width: 100%;
@@ -521,12 +564,12 @@ border-color: transparent #07f transparent transparent;
     }
     .fp-tableCell>.cont>.partner>.frame>img{
         width: 180%;
-        top: 15%;
+        top: 5%;
         left: 0;
-        height: 60%;
+        height: 70%;
     }
     .fp-tableCell>.footer{
-        height: 35%;
+        height: 50%;
     }
     .fp-tableCell>.footer>.footer_area{
         height: 100%;
@@ -535,9 +578,13 @@ border-color: transparent #07f transparent transparent;
         width: 200%;
         margin-left: -100%;
     }
+    .fp-tableCell>.footer>.footer_area>.footer_info_area{
+        font-size: 10px;
+    }
     .fp-tableCell>.footer>.footer_area>.footer_info_area>.footer_company{
         display: flex;
         flex-flow: wrap row;
+        font-size: 12px;
     }
     .fp-tableCell>.footer>.footer_area>.footer_info_area>.footer_company>p{
         margin-bottom: 5px;
@@ -549,7 +596,7 @@ border-color: transparent #07f transparent transparent;
     .fp-tableCell>.footer>.footer_area>.footer_info_area>.footer_infoText{
         margin-top: 10px;
         width: 80%;
-        line-height: 20px;
+        line-height: 15px;
     }
 }
 @media (min-width:481px) and (max-width:767px){

@@ -26,7 +26,7 @@ $(function(){
 					if(bWidth<480){
 						ptnImg.stop().delay(2000).animate({
 							left : -80+'%'
-						},5000)
+						},3000)
 					}
 				}
 			},
