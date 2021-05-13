@@ -19,7 +19,11 @@ $(function(){
 				}else{
 					$('.section_wrap>.coment').hide()
 				}
-
+				if(destination==2){
+					navigation:false
+				}else{
+					navigation:true
+				}
 				if(destination==4){
 					let bWidth = window.outerWidth;
 					const ptnImg = $('.fp-tableCell>.cont>.partner>.frame>img');
